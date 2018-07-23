@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<h1>java script prompt</h1>
+<button onclick="myfunction()">click</button>
+<p id="demo"></p>
+<script>
+function myfunction(){
+var text;
+var person=prompt("please enter your name":,"");
+if(person==null||person==""){
+text="please enter your name";
+}
+else
+{
+text="hey there"+person+"!how are you doing mate?";
+}
+document.getelementbyid("demo").innerhtml=text;
+}
+</script>
+</body>
+</html>
