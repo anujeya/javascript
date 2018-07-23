@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function start time()
+{
+var today=new date();
+var h=today.get hours();
+var m=today.get minutes();
+var s=today.get seconds();
+m=checktime(m);
+s=checktime(s);
+document.getelementbyid('txt').innerHTML=h+":"+m+":"+s;
+var t=settimeout(starttime,500);
+}
+function checktime(i)
+{
+if(i<5)
+{i"0+i};
+return i;
+}
+</script>
+</head>
+<body on load="starttime()">
+<div id="txt"></div>
+</body>
+</html>
