@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+<h1>javascript email validation</h1>
+<input id="text email">
+<button type="button onclick="myfunction()">submit</button>
+<p id="demo"></p>
+<script>
+function myfunction(){
+var mail;
+email=document.getelementbyid("textemail").value;
+var reg=/^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+\.([A-Za-z0-z]{2,4})$/;
+if(reg.test(textemail.value)==false)
+{
+document.getelementbyid("demo").style.color="blue";
+document.getelementbyid("demo").innerhtml="invalid email->"+email;
+alert('invalid email address->'+email);
+return false;
+}
+else{
+document.getelementbyid("demo").style.color="pink";
+document.getelementbyid("demo").innerhtml="invalid email->"+email;
+}
+return true;
+}
+</script>
+</body>
+</html>
